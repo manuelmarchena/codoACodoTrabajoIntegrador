@@ -2,9 +2,12 @@
         margin: 0%;
     }
     
-    .navbar {
+    .posicion {
         position: absolute;
         object-fit: contain;
+    }
+    
+    .navbar {
         margin: 0%;
         z-index: 2;
         width: 100%;
@@ -85,6 +88,11 @@
         height: 50px;
         margin-left: 3%;
         margin-bottom: 3%;
+    }
+    
+    .bg-img-boton-verde>a {
+        text-decoration: none;
+        color: white;
     }
     
     .div__pretarjeta,
@@ -238,6 +246,11 @@
         flex: end;
     }
     
+    .my-5 {
+        bottom: 0%;
+        width: 100%;
+    }
+    
     .my-5,
     .mt-5 {
         margin: 0% !important;
@@ -272,7 +285,8 @@
             flex-direction: column;
             width: 100%;
         }
-        .tarjetas__div {
+        .tarjetas__div,
+        .sell__card {
             width: 100%;
         }
         .navbar {
@@ -304,6 +318,7 @@
             right: 2%;
         }
         .tarjetas__div,
+        .sell__card,
         .div__footer__enlaces__p {
             width: 100%;
         }
@@ -371,4 +386,57 @@
     .card__div__button__startups:hover {
         background-color: #97242f;
     }
+    
+    .nav__sell {
+        margin-bottom: 3%;
+    }
+    
+    .input__mail {
+        margin: 2%;
+    }
+    
+    .card__div__text {
+        text-align: center;
+        align-items: center;
+    }
+    
+    .total__estilo {
+        background-color: #cce5ff;
+        color: #0C4D90;
+    }
+    
+    .btn__tickets {
+        background-color: #96C93E;
+        border-radius: 5px;
+        border: none;
+        width: 48.5%;
+        height: 10%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        color: white;
+        align-items: center;
+        padding: 1%;
+        margin-left: 1%;
+        align-items: center;
+    }
+    
+    .formulario {
+        width: 50%;
+        margin: auto;
+    }
+    
+    .categoria__tarjeta {
+        width: 52%;
+        height: 100%;
+        display: flex;
+        object-fit: cover;
+        align-items: left;
+        margin: auto;
+        flex-wrap: wrap;
+    }
     /* agregar :hover y arreglar botones de ada lovelace
+
+    colores de borde color 2 izquierda
+    #3994F7
+    #F7C83D
+    */
