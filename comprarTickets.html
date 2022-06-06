@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Tickets</title>
+    <link rel="shortcut icon" href="imagenes/obelisco.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="nav__sell">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="navbar-brand" href="https://www.buenosaires.gob.ar/educacion/codo-codo"><img src="imagenes/codoacodo.png" alt="codoACodo" width="100" height="80"> Conf Bs As</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">La conferencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Los oradores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">El lugar y la fecha</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#"><span class="sr-only">Conviértete en orador</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-green" href="#">Comprar tickets</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="categoria__tarjeta">
+            <div class="tarjetas__div">
+                <div class="card__div__text">
+                    <h2>
+                        Estudiante
+                    </h2>
+                    <p>
+                        Tiene un descuento
+                    </p>
+                    <h2>
+                        80%
+                    </h2>
+                    <p>
+                        * presentar documentación
+                    </p>
+                </div>
+            </div>
+            <div class="tarjetas__div">
+                <div class="card__div__text">
+                    <h2>
+                        Trainee
+                    </h2>
+                    <p>
+                        Tiene un descuento
+                    </p>
+                    <h2>
+                        50%
+                    </h2>
+                    <p>
+                        * presentar documentación
+                    </p>
+                </div>
+            </div>
+            <div class="tarjetas__div">
+                <div class="card__div__text">
+                    <h2>
+                        Junior
+                    </h2>
+                    <p>
+                        Tiene un descuento
+                    </p>
+                    <h2>
+                        15%
+                    </h2>
+                    <p>
+                        * presentar documentación
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div class="div__pretarjeta">
+            <p>Venta</p>
+            <h2>Valor del ticket 200$</h2>
+        </div>
+        <div class="formulario">
+            <form>
+                <div class="row div__datos__usuario">
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="ticketsNombre">
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="ticketsApellido">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email"></label>
+                    <input type="email" class="form-control" placeholder="Email" id="ticketsEmail">
+                </div>
+                <div class="row div__datos__usuario">
+                    <div class="col">
+                        <label for="cantidad" class="input__mail">Cantidad</label>
+                        <input type="text" class="form-control" placeholder="cantidad" id="ticketsCantidad">
+                    </div>
+                    <div class="col">
+                        <label for="categoria" class="input__mail">Categoría</label>
+                        <select name="categoria" id="ticketsCategoria" class="form-select">
+                            <option value="-">-- Seleccione --</option>
+                            <option value="0">Sin Categoría</option>
+                            <option value="0.8">Estudiante</option>
+                            <option value="0.5">Trainee</option>
+                            <option value="0.15">Junior</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="alert alert-primary mt-2 mb-4" roles="alert">
+                    Total a pagar: $ <span id="ticketsTotalPago" class="align-middle"></span>
+                </div>
+                <div class="row">
+                    <input type="button" class="btn__tickets" value="Borrar" id="ticketsborrar">
+                    <input type="button" class="btn__tickets" value="Resumen" id="ticketsResumen">
+                </div>
+
+            </form>
+        </div>
+    </main>
+    <!--  MAIN BODY   -->
+
+    <div class="my-5">
+        <!-- Footer -->
+        <footer class="text-center div__footer">
+            <!-- Grid container -->
+            <div>
+                <!-- Section: Links -->
+                <section class="mt-5">
+                    <!-- Grid row-->
+                    <div class="pt-2 d-flex justify-content-center div__footer__enlaces">
+                        <!-- Grid column -->
+                        <div class="col-md-1 div__footer__enlaces__p">
+                            <p>
+                                <a href="#!" class="text-white ">Preguntas frecuentes</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-1 div__footer__enlaces__p">
+                            <p>
+                                <a href="#!" class="text-white">Contáctanos</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-1 div__footer__enlaces__p">
+                            <p>
+                                <a href="#!" class="text-white">Prensa</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-1 div__footer__enlaces__p">
+                            <p>
+                                <a href="#!" class="text-white">Conferencias</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-md-1 div__footer__enlaces__p">
+                            <p>
+                                <a href="#!" class="text-white">Términos y condiciones</a>
+                            </p>
+                        </div>
+                        <div class="col-md-1 div__footer__enlaces__p">
+                            <p>
+                                <a href="#!" class="text-white">Privacidad</a>
+                            </p>
+                        </div>
+                        <div class="col-md-1 div__footer__enlaces__p">
+                            <p>
+                                <a href="#!" class="text-white">Estudiantes</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.js"></script>
+    <script src="js/scriptTrabajoIntegrador.js"></script>
+</body>
+
+</html>
